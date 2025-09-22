@@ -1,0 +1,1 @@
+Esta pagina es con fines de lucro y buscamos vender indumentaria de mujer. 
