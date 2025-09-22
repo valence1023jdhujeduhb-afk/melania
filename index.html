@@ -1,0 +1,103 @@
+<!DOCTYPE html><html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barreira y Brixner</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="BUZO7.jpg" class="d-block w-150 ALTURA" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="BUZO8.jpg" class="d-block w-150 ALTURA" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="BUZO9.jpg" class="d-block w-150 ALTURA" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+    <h1>MODA JOVEN</h1><div class="centrar">
+  <button onclick="document.getElementById('sec1').scrollIntoView({behavior: 'smooth'})">Productos</button>
+  <button onclick="document.getElementById('sec2').scrollIntoView({behavior: 'smooth'})">Datos Personales</button>
+  <button onclick="document.getElementById('sec3').scrollIntoView({behavior: 'smooth'})">Calendario</button>
+</div>
+
+<section class="Productos" id="sec1">
+    <div><img src="BUZOSCRISTIANOS2.webp" alt=""><p>BUZO NEGRO OVERSIZE YESHUA (HOMBRE)</p><span>TRANSFERENCIA O EFECTIVO $25.000</span><br><button>Comprar</button></div>
+    <div><img src="BUZOSCRISTIANOS3.webp" alt=""><p>BUZO NEGRO CON CRUZ (UNISEX)</p><span>TRANSFERENCIA O EFECTIVO $28.000</span><br><button>Comprar</button></div>
+    <div><img src="BUZOSCRISTIANOS4.jpg" alt=""><p>BUZO BEIGE SIN CAPUCHA ( MUJER)</p><span>TRANSFERENCIA O EFECTIVO $28.000</span><br><button>Comprar</button></div>
+    <div><img src="BUZOSCRISTIANOS5.jpg" alt=""><p>BUZOS NEGRO OVERSIZE CON FRASE (HOMBRE)</p><span>TRANSFERENCIA O EFECTIVO $30.000</span><br><button>Comprar</button></div>
+    <div><img src="BUZOSCRISTIANOS6.png" alt=""><p>BUZO BLANCO FRASE EN INGLES (UNISEX)</p><span>TRANSFERENCIA O EFECTIVO $28.000</span><br><button>Comprar</button></div>
+</section>
+
+<section class="Contacto" id="sec2">
+    <form>
+        <fieldset>
+            <label>DATOS PERSONALES</label>
+            <img class="perfil" src="MODA JOVEN.png" alt="">
+            <br><label>Nombres</label><br>
+            <input class="formulario" type="text">
+            <br><label>Apellidos</label><br>
+            <input class="formulario" type="text">
+        </fieldset>
+        <fieldset>
+            <label>DATOS LOGIN</label>
+            <br><label>Mail</label><br>
+            <input class="formulario" type="email">
+            <br><label>Contraseña</label><br>
+            <input class="formulario" type="password">
+        </fieldset>
+        <input class="formulario" type="date">
+        <br>
+        <textarea class="formulario" rows="4" cols="40"></textarea>
+    </form>
+</section>
+
+<section class="Calendario" id="sec3">
+  <div class="botones">
+    <button onclick="abrirCaja('miCaja')">Abrir Calendario</button>
+    <button onclick="cerrarCaja('miCaja')">Cerrar Calendario</button>
+  </div>
+  <div id="miCaja" style="display: none; border: 1px solid black; padding: 10px; margin-top: 10px;">
+    <label>Seleccione el día de entrega:</label><br><br>
+    <label>Mayo</label><br><br>
+    <table>
+      <tr><td>Lun</td><td>Mar</td><td>Mié</td><td>Jue</td><td>Vie</td><td>Sáb</td><td>Dom</td></tr>
+      <tr><td></td><td></td><td></td><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+      <tr><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td></tr>
+      <tr><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td></tr>
+      <tr><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td></tr>
+      <tr><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td></td><td></td></tr>
+    </table>
+  </div>
+</section>
+
+<footer>
+  <p>@MODAJOVEN</p>
+</footer>
+
+<script>
+  function abrirCaja(id) {
+    const caja = document.getElementById(id);
+    if (caja) caja.style.display = 'block';
+  }
+  function cerrarCaja(id) {
+    const caja = document.getElementById(id);
+    if (caja) caja.style.display = 'none';
+  }
+</script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

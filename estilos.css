@@ -1,0 +1,70 @@
+h1 {
+     text-align: center;
+      font-size: 2.5em; 
+      color: rgb(147, 122, 218) ; 
+      margin-top: 30px; 
+      font-family: Georgia, serif; }
+
+.centrar { 
+    text-align: center; 
+    margin: 20px; }
+
+.centrar button { 
+    background-color: rgb(140, 122, 192) ; 
+    padding: 10px 20px; 
+    margin: 10px; 
+    border: none; 
+    cursor: pointer; 
+    font-weight: bold; }
+
+.Productos { 
+    background-color: rgb(141, 136, 214) ; 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
+    padding: 20px; 
+    text-align: center; }
+
+.Productos div { 
+    width: 300px; 
+    background-color: rgb(243, 241, 241); 
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1); 
+    padding: 10px; }
+
+.Productos img { 
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px; }
+
+.Contacto { 
+    background-color: rgb(137, 107, 185) ; 
+    padding: 20px; }
+
+.perfil { 
+    width: 120px; 
+    height: 120px; 
+    border-radius: 50%; 
+    float: right; 
+    background-color:rgb(160, 113, 199) ; 
+    object-fit: cover; }
+
+.formulario { 
+    width: 300px; 
+    margin: 10px; }
+
+td { 
+    text-align: center; 
+    padding: 10px; 
+    font-size: larger; 
+    border: solid rgba(181, 147, 236, 0.301) 1px; 
+    background-color: rgba(175, 119, 212, 0.541); 
+    color: rgb(41, 40, 40); }
+
+footer { 
+    text-align: center; 
+    margin-top: 2em; }
+    .ALTURA{ 
+        height: 290px;
+    }
